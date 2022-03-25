@@ -1,1 +1,12 @@
 # Decision-Tree-SAS-Miner
+
+**Dataset:** Student Performance 
+
+**Steps:**
+1. Create Diagram
+2. Drag File import from sample and Import Student Performance
+3. Edit Variables (i.e, set Gender as Target)
+4. Drag Data Partition node from sample tab
+5. Change Dataset splitting ratio: training 40, validation 40, test 20
+6. Drag Decision Tree node from model tab
+7. Run the Decision Tree node and view the results 
