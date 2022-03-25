@@ -1,0 +1,227 @@
+*------------------------------------------------------------*
+User:                u59396733
+Date:                March 25, 2022
+Time:                17:52:46
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+            Measurement    Frequency
+Role           Level         Count
+ 
+ID           INTERVAL          1
+INPUT        NOMINAL           1
+REJECTED     NOMINAL           6
+TARGET       NOMINAL           1
+ 
+ 
+ 
+ 
+Model Events
+ 
+                                  Number
+                   Measurement      of
+Target    Event       Level       Levels      Order       Label
+ 
+gender    MALE       NOMINAL         2      Descending
+ 
+ 
+ 
+ 
+Predicted and decision variables
+ 
+Type         Variable          Label
+ 
+TARGET       gender
+PREDICTED    P_gendermale      Predicted: gender=male
+RESIDUAL     R_gendermale      Residual: gender=male
+PREDICTED    P_genderfemale    Predicted: gender=female
+RESIDUAL     R_genderfemale    Residual: gender=female
+FROM         F_gender          From: gender
+INTO         I_gender          Into: gender
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+Variable Importance
+ 
+                                                                                              Ratio of
+                                    Number of                                               Validation
+                                    Splitting                            Validation        to Training
+Variable Name         Label           Rules           Importance         Importance         Importance
+ 
+race_ethnicity    race/ethnicity        1                 1.0000             0.0000             0.0000
+ 
+ 
+ 
+Tree Leaf Report
+ 
+                                 Training                    Validation
+Node               Training       Percent     Validation       Percent
+ Id     Depth    Observations      MALE      Observations       MALE
+ 
+  2       1           273          0.53           277           0.50
+  3       1           126          0.37           123           0.44
+ 
+ 
+ 
+ 
+Fit Statistics
+ 
+Target=gender Target Label=' '
+ 
+   Fit
+Statistics    Statistics Label                Train    Validation       Test
+ 
+  _NOBS_      Sum of Frequencies            399.000      400.000     201.000
+  _MISC_      Misclassification Rate          0.439        0.480       0.547
+  _MAX_       Maximum Absolute Error          0.627        0.627       0.627
+  _SSE_       Sum of Squared Errors         194.907      200.632     105.345
+  _ASE_       Average Squared Error           0.244        0.251       0.262
+  _RASE_      Root Average Squared Error      0.494        0.501       0.512
+  _DIV_       Divisor for ASE               798.000      800.000     402.000
+  _DFT_       Total Degrees of Freedom      399.000         .           .
+ 
+ 
+ 
+ 
+Classification Table
+ 
+Data Role=TRAIN Target Variable=gender Target Label=' '
+ 
+                       Target        Outcome     Frequency       Total
+Target    Outcome    Percentage    Percentage      Count      Percentage
+ 
+FEMALE    FEMALE       62.6984       38.1643         79         19.7995
+MALE      FEMALE       37.3016       24.4792         47         11.7794
+FEMALE    MALE         46.8864       61.8357        128         32.0802
+MALE      MALE         53.1136       75.5208        145         36.3409
+ 
+ 
+Data Role=VALIDATE Target Variable=gender Target Label=' '
+ 
+                       Target        Outcome     Frequency       Total
+Target    Outcome    Percentage    Percentage      Count      Percentage
+ 
+FEMALE    FEMALE       56.0976       33.3333         69          17.25
+MALE      FEMALE       43.9024       27.9793         54          13.50
+FEMALE    MALE         49.8195       66.6667        138          34.50
+MALE      MALE         50.1805       72.0207        139          34.75
+ 
+ 
+ 
+ 
+Event Classification Table
+ 
+Data Role=TRAIN Target=gender Target Label=' '
+ 
+  False       True        False       True
+Negative    Negative    Positive    Positive
+ 
+   47          79          128         145
+ 
+ 
+Data Role=VALIDATE Target=gender Target Label=' '
+ 
+  False       True        False       True
+Negative    Negative    Positive    Positive
+ 
+   54          69          138         139
+ 
+ 
+ 
+ 
+Assessment Score Rankings
+ 
+Data Role=TRAIN Target Variable=gender Target Label=' '
+ 
+                                                                                           Mean
+                               Cumulative        %       Cumulative      Number of      Posterior
+Depth      Gain       Lift        Lift       Response    % Response    Observations    Probability
+ 
+   5     10.3766    1.10377      1.10377      53.1136      53.1136          20           0.53114
+  10     10.3766    1.10377      1.10377      53.1136      53.1136          20           0.53114
+  15     10.3766    1.10377      1.10377      53.1136      53.1136          20           0.53114
+  20     10.3766    1.10377      1.10377      53.1136      53.1136          20           0.53114
+  25     10.3766    1.10377      1.10377      53.1136      53.1136          20           0.53114
+  30     10.3766    1.10377      1.10377      53.1136      53.1136          20           0.53114
+  35     10.3766    1.10377      1.10377      53.1136      53.1136          20           0.53114
+  40     10.3766    1.10377      1.10377      53.1136      53.1136          20           0.53114
+  45     10.3766    1.10377      1.10377      53.1136      53.1136          20           0.53114
+  50     10.3766    1.10377      1.10377      53.1136      53.1136          20           0.53114
+  55     10.3766    1.10377      1.10377      53.1136      53.1136          20           0.53114
+  60     10.3766    1.10377      1.10377      53.1136      53.1136          20           0.53114
+  65     10.3766    1.10377      1.10377      53.1136      53.1136          20           0.53114
+  70      9.5551    0.98876      1.09555      47.5794      52.7183          20           0.47579
+  75      7.4193    0.77517      1.07419      37.3016      51.6905          20           0.37302
+  80      5.5504    0.77517      1.05550      37.3016      50.7912          20           0.37302
+  85      3.9014    0.77517      1.03901      37.3016      49.9977          20           0.37302
+  90      2.4356    0.77517      1.02436      37.3016      49.2923          20           0.37302
+  95      1.1241    0.77517      1.01124      37.3016      48.6612          20           0.37302
+ 100      0.0000    0.77517      1.00000      37.3016      48.1203          19           0.37302
+ 
+ 
+Data Role=VALIDATE Target Variable=gender Target Label=' '
+ 
+                                                                                           Mean
+                               Cumulative        %       Cumulative      Number of      Posterior
+Depth      Gain       Lift        Lift       Response    % Response    Observations    Probability
+ 
+   5     4.00105    1.04001      1.04001      50.1805      50.1805          20           0.53114
+  10     4.00105    1.04001      1.04001      50.1805      50.1805          20           0.53114
+  15     4.00105    1.04001      1.04001      50.1805      50.1805          20           0.53114
+  20     4.00105    1.04001      1.04001      50.1805      50.1805          20           0.53114
+  25     4.00105    1.04001      1.04001      50.1805      50.1805          20           0.53114
+  30     4.00105    1.04001      1.04001      50.1805      50.1805          20           0.53114
+  35     4.00105    1.04001      1.04001      50.1805      50.1805          20           0.53114
+  40     4.00105    1.04001      1.04001      50.1805      50.1805          20           0.53114
+  45     4.00105    1.04001      1.04001      50.1805      50.1805          20           0.53114
+  50     4.00105    1.04001      1.04001      50.1805      50.1805          20           0.53114
+  55     4.00105    1.04001      1.04001      50.1805      50.1805          20           0.53114
+  60     4.00105    1.04001      1.04001      50.1805      50.1805          20           0.53114
+  65     4.00105    1.04001      1.04001      50.1805      50.1805          20           0.53114
+  70     3.86164    1.02049      1.03862      49.2388      50.1132          20           0.50742
+  75     3.00350    0.90990      1.03003      43.9024      49.6992          20           0.37302
+  80     2.25262    0.90990      1.02253      43.9024      49.3369          20           0.37302
+  85     1.59009    0.90990      1.01590      43.9024      49.0172          20           0.37302
+  90     1.00117    0.90990      1.01001      43.9024      48.7331          20           0.37302
+  95     0.47424    0.90990      1.00474      43.9024      48.4788          20           0.37302
+ 100     0.00000    0.90990      1.00000      43.9024      48.2500          20           0.37302
+ 
+ 
+ 
+ 
+Assessment Score Distribution
+ 
+Data Role=TRAIN Target Variable=gender Target Label=' '
+ 
+ Posterior     Number                     Mean
+Probability      of      Number of     Posterior
+   Range       Events    Nonevents    Probability    Percentage
+ 
+ 0.50-0.55       145        128         0.53114        68.4211
+ 0.35-0.40        47         79         0.37302        31.5789
+ 
+ 
+Data Role=VALIDATE Target Variable=gender Target Label=' '
+ 
+ Posterior     Number                     Mean
+Probability      of      Number of     Posterior
+   Range       Events    Nonevents    Probability    Percentage
+ 
+ 0.50-0.55       139        138         0.53114         69.25
+ 0.35-0.40        54         69         0.37302         30.75
