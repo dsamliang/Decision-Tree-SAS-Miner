@@ -1,8 +1,11 @@
 # Decision-Tree-SAS-Miner
 
-**Dataset:** StudentPerformance.csv (https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)
+**Dataset:** 
+-
+StudentPerformance.csv (https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)
 
 **Steps:**
+-
 1. Create Diagram
 2. Drag File import from sample and Import Student Performance
 3. Edit Variables (i.e, set Gender as Target)
@@ -13,7 +16,7 @@
 
 
 **Results:**
-
+-
 - ![image](https://user-images.githubusercontent.com/98597962/160176285-91cc2103-6701-48ca-b868-24044e081ab4.png)
 
 - ![image](https://user-images.githubusercontent.com/98597962/160176314-889b1465-dda6-4b14-ad81-d313f553db9a.png)
