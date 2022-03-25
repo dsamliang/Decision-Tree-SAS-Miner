@@ -1,6 +1,6 @@
 # Decision-Tree-SAS-Miner
 
-**Dataset:** Student Performance 
+**Dataset:** StudentPerformance.csv
 
 **Steps:**
 1. Create Diagram
